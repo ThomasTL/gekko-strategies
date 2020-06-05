@@ -6,7 +6,7 @@ This repo contains some trading strategies to run using [gekko](https://github.c
 2. Copy the strategy configuration `.toml` file to the configuration directory located in your gekko bot installation folder generally named as follow: `./gekko/config/strategies`
 3. If you want to be able to run the strategy with gekko in CLI mode, you will need to add on the following source code to the `config.js` file you use to run gekko strategy from the command line.
 
-```
+```javascript
 config.tradingAdvisor = {
   enabled: true,
   method: 'MACross',
