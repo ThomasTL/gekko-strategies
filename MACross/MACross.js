@@ -1,6 +1,6 @@
 var log = require('../core/log.js');
 
-class IndicatorStat {
+class IndicatorTrend {
     constructor(){
         this.trend = undefined;
         this.persistUp = 0;
@@ -42,9 +42,9 @@ var strat = {
                 persist: 0,
                 diff: 0
             },        
-            ao: new IndicatorStat(),
-            shortMA: new IndicatorStat(),
-            longMA: new IndicatorStat(),
+            ao: new IndicatorTrend(),
+            shortMA: new IndicatorTrend(),
+            longMA: new IndicatorTrend(),
             entryPrice: undefined 
         }
     },
